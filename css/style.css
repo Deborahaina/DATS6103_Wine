@@ -1,0 +1,19 @@
+
+.card-text{
+   text-align: left; 
+} 
+.card-header{
+   font-size: 1.5em;
+}
+
+iframe{
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   height:600px;
+   width:1000px;
+}
+
+#mini-header{
+   text-align: center;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DATS 6103</title>
+  <!---- bootstrap cdn-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+ </head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="jumbotron col-md-12 bg-secondary text-center text-white">
+            <h1 class="display-3 font-weight-bold">Wine Data Analysis</h1>
+            <p>Check out interesting details about your favorite wine from the charts below</p>
+      </div>
+    </div>
+ </div>
+
+ <section>
+     <div class="container">
+        <div class='row text-center'>
+            <div class="col-md-5 col-sm-10 ">
+                <div class="card" >
+                    <div class="card-header bg-secondary text-white">Project Summary</div>
+                        <div class="card-body">
+                        <p class="card-text">
+                    This data was sourced from kaggle. Zack Thoutt scraped the website winemag.com after watching 'somm', 
+                    a documentary on master sommelier(the ability to identify wines through blind tasting). He collected details on each wine listed on the website.
+                    We may not all be master sommeliers and blindly identify wines and details about them but what we can do is determine trends and patterns in the data collected through data mining.
+                    We will be looking at Wine prices based on the country of origin, Wine prices based on year, Wine prices based on type.
+                    We will look at the regions of the world and see which countries in the region produces the most wine. We will further focus on the United States and see 
+                    which State produces the most wine, we will look at the average wine prices based on the State.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-10">
+                <img src="./css/blind_winetasting.jpg" alt="Wine Tasting" width="600" height="460">
+            </div>
+         </div>
+     </div>
+
+ </section>
+
+ <section>
+     <div class="container">
+         <div class="row">
+             <div class="col-md-10">
+            <iframe frameborder="0" scrolling="no" src="//plotly.com/~Daina92/6.embed"></iframe></div>
+            <div class="col-md-10">
+            <iframe frameborder="0" scrolling="no" src="//plotly.com/~Daina92/8.embed"></iframe></div>
+            <div class="col-md-10">
+            <iframe frameborder="0" scrolling="no" src="//plotly.com/~Daina92/10.embed"></iframe></div>
+            <div class="col-md-10">
+            <iframe frameborder="0" scrolling="no" src="//plotly.com/~Daina92/18.embed"></iframe>
+            </div>
+         </div>
+        </div>
+ </section>
+
+ <section>
+     <div class="container">
+         <div class="row">
+             <div class="col text-center mt-5">
+                 <h3 id="mini-header" class="text-uppercase font-weight-bold ">Analyzing US Wine Data</h3>
+                    <div class="col-md-10">
+                     <iframe frameborder="0" scrolling="no" src="//plotly.com/~Daina92/12.embed"></iframe></div>
+                     <div class="col-md-10">
+                        <iframe frameborder="0" scrolling="no" src="//plotly.com/~Daina92/14.embed"></iframe></div>
+                        <div class="col-md-10">
+                            <iframe frameborder="0" scrolling="no" src="//plotly.com/~Daina92/16.embed"></iframe>
+                        </div>
+            </div>
+         </div>
+     </div>
+ </section>
+
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
