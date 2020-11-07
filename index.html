@@ -11,15 +11,26 @@
   integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
  </head>
-
 <body>
+
+      <!--- Start of navbar-->
+<nav class="navbar navbar-expand-md navbar-dark bg-secondary mb-4 sticky-top">
+    <button type="button" class="navbar-toggler  ml-3" data-toggle="collapse" data-target="#navbarNav" aria-control="navbarNav">
+        <span class="navbar-toggler-icon "></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item px-3 active"><a class="nav-link link-special text-capitalize font-weight-bold text-light" href="index.html">Home</a></li>  
+            <li class="nav-item px-3 active"><a class="nav-link link-special text-capitalize font-weight-bold text-light" href="world.html">World Analysis</a></li>
+        <li class="nav-item px-3 active"><a class="nav-link link-special text-capitalize font-weight-bold text-light" href="usa.html">USA Analysis</a></li></ul>
+    </div>
+</nav>
 
 <div class="container">
     <div class="row">
         <div class="jumbotron col-md-12 bg-secondary text-center text-white">
             <h1 class="display-3 font-weight-bold">Wine Data Analysis</h1>
             <p>Check out interesting details about your favorite wine from the charts below</p>
-      </div>
+         </div>
     </div>
  </div>
 
@@ -35,62 +46,54 @@
                     a documentary on master sommelier(the ability to identify wines through blind tasting). He collected details on each wine listed on the website.
                     We may not all be master sommeliers and blindly identify wines and details about them but what we can do is determine trends and patterns in the data collected through data mining.
                     We will be looking at Wine prices based on the country of origin, Wine prices based on year, Wine prices based on type.
-                    We will look at the regions of the world and see which countries in the region produces the most wine. We will further focus on the United States and see 
-                    which State produces the most wine, we will look at the average wine prices based on the State.</p>
-                  </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-10">
-                <img src="./css/blind_winetasting.jpg" alt="Wine Tasting" width="600" height="460">
-            </div>
-         </div>
-     </div>
+                    We will look at the regions of the world and see which countries in the region produces the most wine.We will further narrow our focus on the USA</p> </div>
+                    </div>
+                    </div>
+                <div class="col-md-6 col-sm-10">
+            <img src="./css/blind_winetasting.jpg" class ="img-fluid" alt="Wine Tasting" width="600" height="500"></div>
+        <div class="col-md-10 mt-5">
+    <a href="https://github.com/Deborahaina/DATS6103_Wine" target="_blank">Link to Github Code repository</a></div>
+</div>
+</div>
+</section>
 
- </section>
 
- <section>
-     <div class="container">
-         <div class="row">
-             <div class="col-md-10">
-            <iframe frameborder="0" scrolling="no" src="//plotly.com/~Daina92/6.embed"></iframe></div>
-            <div class="col-md-10">
-            <iframe frameborder="0" scrolling="no" src="//plotly.com/~Daina92/8.embed"></iframe></div>
-            <div class="col-md-10">
-            <iframe frameborder="0" scrolling="no" src="//plotly.com/~Daina92/10.embed"></iframe></div>
-            <div class="col-md-10">
-            <iframe frameborder="0" scrolling="no" src="//plotly.com/~Daina92/18.embed"></iframe>
-            </div>
-         </div>
-        </div>
- </section>
+<section>
+    <div class="container mt-5">
+       <div class='row text-center'>
+           <div class="col-md-6 col-sm-10 ">
+               <div class="card" >
+                   <div class="card-header bg-secondary text-white">Data Preprocessing</div>
+                       <div class="card-body">
+                       <p class="card-text">
+                        We start off by dropping unnecessary columns from the datasets. We extract the year column from the title column. 
+                        There appear to be a recurring pattern of the year being mentioned in almost all if not all of the wines collected in this datasets.
+                        An additional column called  Location is created by joining province and country columns. This will be used as the target location to collect latitude and 
+                        longitude points on google's api. We create a new dataframe using the data collected.
+                        The next step is to merge the new dataframe with the existing dataframe.
+                        An additional column called category was created which groups the wines into Red and White (There are 5 main wine categories Red, White,Sparkling,Blush,Fortified).
+                        For the sake of our analysis it was simplified to red or white. Countries that had less than 50 mentions from the wine tasters were dropped from the dataframe
+                       The cleaned dataset is saved and exported as a new csv file and also stored in a sqlite database</p> </div>
+                   </div>
+                   </div>
+               <div class="col-md-6 col-sm-10">
+           <img src="./css/lat_lng_1.png" class="img-fluid" alt="Lat Lng Image" width="600" height="500"></div>
+       <div class="col-md-10 mt-3">
+   <a href="https://github.com/Deborahaina/DATS6103_Wine">Link to Github Code repository</a></div>
+</div>
+</div>
+</section>
 
- <section>
-     <div class="container">
-         <div class="row">
-             <div class="col text-center mt-5">
-                 <h3 id="mini-header" class="text-uppercase font-weight-bold ">Analyzing US Wine Data</h3>
-                 <div class="col-md-10">
-                    <iframe frameborder="0" scrolling="no" src="//plotly.com/~Daina92/54.embed"></iframe></div>
-                    <div class="col-md-10">
-                     <iframe frameborder="0" scrolling="no" src="//plotly.com/~Daina92/12.embed"></iframe></div>
-                     <div class="col-md-10">
-                        <iframe frameborder="0" scrolling="no" src="//plotly.com/~Daina92/14.embed"></iframe></div>
-                        <div class="col-md-10">
-                            <iframe frameborder="0" scrolling="no" src="//plotly.com/~Daina92/16.embed"></iframe>
-                        </div>
-            </div>
-         </div>
-     </div>
- </section>
 
- <footer class="bg-secondary mt-5 pt-5 ">
-     <div class="container-fluid"></div> 
-     <div class="row">
-        <div class="col text-center text-white">
-            <h4>DATS 6103 - Individual Project 2 - Deborah Aina</h4>
-     </div>
 
- </footer>
+
+<footer class="bg-secondary mt-5 pt-5 ">
+    <div class="container-fluid"></div> 
+        <div class="row">
+            <div class="col text-center text-white">
+        <h4>DATS 6103 - Individual Project 2 - Deborah Aina</h4>
+    </div>
+</footer>
 
 
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
