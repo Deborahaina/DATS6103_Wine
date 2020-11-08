@@ -18,6 +18,15 @@ Third analysis is to take a look at wine prices by country of origin.
 The last analysis is to look at the number of wineries per country.
 We perform the same analysis again but this time, our focus will be on the United States
 
+Conclusion
+The country with the most wineries is the United States.
+The most expensive wine in absolute value is from France worth $3300.
+The most expensive wine on average is from England.
+The higher the grade of wine, the more expensive the wine is.
+On average older wines, that is wines produced in the 1980's are more expensive than the ones produced recently.
+The state with the most wineries in the US is California.
+The most expensive wines on average in the US is from California 
+
 
 
 
