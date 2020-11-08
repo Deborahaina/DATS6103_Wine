@@ -9,6 +9,15 @@ Initial Analysis
 We also take a look at the person who identified the most wine in descending order. Roger Voss identified the most wine, 18243 followed by Michael Schachner 14306 and third is Virgina Boone 9402.In all there are 19 wine tasters in this datatset.
 I plotted a boxplot to see the distribution of the wine prices throughout the datasets. There is wine as cheap as $4 and wine as expensive as $3300. The average winr price is $37.64.
 
+Visualizations
+We plot a correlation matrix to see if there is any correlation between price, year and wine grade. There seem not be a correlation between year and price of wine but we identify a strong correlation between grade of wine and price of wine.
+
+Our first analysis is to take a look wine prices versus by wine grade.We see a progressive linear trend, the higher the grade the more expensive the wine is. 
+Second analysis is to take a look at wine prices by the year the wine was produced. There is no significant trend here but we see that older wines are on average more expensive than recent wines. 
+Third analysis is to take a look at wine prices by country of origin.
+The last analysis is to look at the number of wineries per country.
+We perform the same analysis again but this time, our focus will be on the United States
+
 
 
 
