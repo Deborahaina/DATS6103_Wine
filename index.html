@@ -67,19 +67,18 @@
                        <div class="card-body">
                        <p class="card-text">
                         We start off by dropping unnecessary columns from the datasets. We extract the year column from the title column. 
-                        There appear to be a recurring pattern of the year being mentioned in almost all if not all of the wines collected in this datasets.<br>
-                        An additional column called  Location is created by joining province and country columns. This will be used as the target location to collect latitude and 
-                        longitude points on google's api. We create a new dataframe using the data collected.<br>
-                        The next step is to merge the new dataframe with the existing dataframe.<br>
-                        An additional column called category was created which groups the wines into Red and White (There are 5 main wine categories Red, White,Sparkling,Blush,Fortified).
-                        For the sake of our analysis it was simplified to red or white. Countries that had less than 50 mentions from the wine tasters were dropped from the dataframe
-                       The cleaned dataset is saved and exported as a new csv file and also stored in a sqlite database</p> </div>
+                        There appear to be a recurring pattern of the year being mentioned in almost all of the titles<br>
+                        An additional column called Location is created by joining province and country columns. This will be used as the target location to collect latitude and 
+                        longitude points from google's api. We create a new dataframe using the data collected.The next step is to merge the new dataframe with the existing dataframe.<br>
+                        A column called category was created which groups wines into Red and White (There are 5 main wine cateogories).
+                        For the sake of our analysis it was simplified to red or white. Countries that had less than 50 mentions from the wine tasters are dropped.<br>
+                       The cleaned dataset is saved and exported as a csv file and loaded to a sqlite database</p> </div>
                    </div>
                    </div>
                <div class="col-md-6 col-sm-10">
            <img src="./css/lat_lng_1.png" class="img-fluid" alt="Lat Lng Image" width="600" height="500"></div>
-       <div class="col-md-10 mt-3">
-   <a href="https://github.com/Deborahaina/DATS6103_Wine">Link to Github Code repository</a></div>
+       <div class="col-md-10 mt-5">
+   <a href="https://github.com/Deborahaina/DATS6103_Wine" target="_blank">Link to Github Code repository</a></div>
 </div>
 </div>
 </section>
@@ -97,13 +96,14 @@
                     Second analysis is to take a look wine prices versus by wine grade.We see a progressive linear trend, the higher the grade the more
                 expensive the wine is. <br>
             Third analysis is to take a look at wine prices by the year the wine was produced. There is no significant trend here but we see that older wines are 
-        on average more expensive than recent wines.
+        on average more expensive than recent wines.<br>
+        Fourth Analysis is wine prices by country of origin.
     The last analysis is to look at the number of wineries per country.
 We perform the same analysis again but this time, our focus will be on the United States</p> </div>
                    </div>
                    </div>
                <div class="col-md-6 col-sm-10">
-           <img src="./css/lat_lng_1.png" class="img-fluid" alt="Lat Lng Image" width="600" height="500"></div>
+           <img src="./css/grade_price_1.jpeg" class="img-fluid" alt="Lat Lng Image" width="600" height="500"></div>
        <div class="col-md-10 mt-3">
    <a href="https://github.com/Deborahaina/DATS6103_Wine">Link to Github Code repository</a></div>
 </div>
