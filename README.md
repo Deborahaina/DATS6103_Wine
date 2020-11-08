@@ -1,5 +1,7 @@
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
+[![DOI](https://zenodo.org/badge/310781101.svg)](https://zenodo.org/badge/latestdoi/310781101)
+
 # DATS6103_Wine
 Data Source  
 The orginial data was obtained from Kaggle posted by Zack Thoutt.He scraped the website winemag.com,(a wine enthusiasts website) after watching 'somm', a documentary on master sommelier(the ability to identify wines through blind tasting).This data is available under the Creative commons,Attribution and Share-Alike license and I do not own this data.It is being used for educational purposes only.Data collected include Description, Wine variety, Page Title, Country of origin, Price, Points, Province, Region, Winery,Taster's name, Taster Twitter Handle.
