@@ -13,7 +13,7 @@
  </head>
 <body>
 
-      <!--- Start of navbar-->
+<!--- Start of navbar-->
 <nav class="navbar navbar-expand-md navbar-dark bg-secondary mb-4 sticky-top">
     <button type="button" class="navbar-toggler  ml-3" data-toggle="collapse" data-target="#navbarNav" aria-control="navbarNav">
         <span class="navbar-toggler-icon "></span></button>
@@ -24,7 +24,10 @@
         <li class="nav-item px-3 active"><a class="nav-link link-special text-capitalize font-weight-bold text-light" href="usa.html">United States</a></li></ul>
     </div>
 </nav>
+<!---End of navbar-->
 
+
+<!----Start of jumbotron-->
 <div class="container">
     <div class="row">
         <div class="jumbotron col-md-12 bg-secondary text-center text-white">
@@ -33,31 +36,34 @@
          </div>
     </div>
  </div>
+ <!--End of jumbotron-->
 
- <section>
-     <div class="container">
+
+ <!--Project summary section-->
+<section>
+    <div class="container">
         <div class='row text-center'>
             <div class="col-md-5 col-sm-10 ">
                 <div class="card" >
                     <div class="card-header bg-secondary text-white">Project Summary</div>
                         <div class="card-body">
                         <p class="card-text">
-                    This data was sourced from kaggle. Zack Thoutt scraped the website winemag.com after watching 'somm', 
-                    a documentary on master sommelier(the ability to identify wines through blind tasting). He collected details on each wine listed on the website.
-                    We may not all be master sommeliers and blindly identify wines and details about them but what we can do is determine trends and patterns in the data collected through data mining.
-                    We will be looking at Wine prices based on the country of origin, Wine prices based on year, Wine prices based on grade.
-                    We will look at the regions of the world and see which countries in the region produces the most wine.We will focus on the United States and run 
-                a similar analysis</p> </div>
+                        This data was sourced from kaggle. Zack Thoutt scraped the website winemag.com after watching 'somm', 
+                            a documentary on master sommelier(the ability to identify wines through blind tasting). He collected details on each wine listed on the website.
+                            We may not all be master sommeliers and blindly identify wines and details about them but what we can do is determine trends and patterns in the data collected through data mining.
+                            We will be looking at Wine prices based on the country of origin, Wine prices based on year, Wine prices based on grade.
+                        We will look at the regions of the world and see which countries in the region produces the most wine.We will focus on the United States and run a similar analysis</p> </div>
                     </div>
-                    </div>
-                <div class="col-md-6 col-sm-10">
-            <img src="./css/blind_winetasting.jpg" class ="img-fluid" alt="Wine Tasting" width="600" height="500">
-            <a href="https://www.kaggle.com/zynicide/wine-reviews" target="_blank">Link to Original Dataset</a></div>
-       
+                </div>
+            <div class="col-md-6 col-sm-10">
+        <img src="./css/blind_winetasting.jpg" class ="img-fluid" alt="Wine Tasting" width="600" height="500">
+    <a href="https://www.kaggle.com/zynicide/wine-reviews" target="_blank">Link to Original Dataset</a></div>
 </div>
 </section>
+<!--Project summary section-->
 
 
+<!--Data Processing section-->
 <section>
     <div class="container mt-5">
        <div class='row text-center'>
@@ -79,12 +85,13 @@
            <img src="./css/lat_lng_1.png" class="img-fluid" alt="Lat Lng Image" width="600" height="500">
            <a href="part_1.html" target="_blank">Link to Notebook</a>
         </div>
-        
-    
-</div>
+    </div>
 </div>
 </section>
+<!--End of Data Processing section-->
 
+
+<!--Analysis section-->
 <section>
     <div class="container mt-5">
        <div class='row text-center'>
@@ -94,41 +101,53 @@
                        <div class="card-body">
                        <p class="card-text">
                         First We take a look at the wine tasters, we want to know who identified the most wine(s). Roger Voss came in first identifying 18243 followed by 
-                        Michael Schachner 14306 and third is Virginie Boone 9402. In all there are 19 wine tasters in this datatset.<br>
-                    Second analysis is to take a look wine prices by wine grade.We see a progressive linear trend, the higher the grade of wine is, the more
-                expensive the wine. <br>
-            Third analysis is to take a look at wine prices by the year the wine was produced. There is no consistent trend here but we see that older wines are 
-        on average more expensive than recent wines.<br>
-        Fourth Analysis is wine prices by country of origin.
-    The last analysis is to look at the number of wineries per country.
-We perform the same analysis again but this time, our focus will be on the United States</p> </div>
-                   </div>
-                   </div>
-               <div class="col-md-6 col-sm-10">
-           <img src="./css/grade_price_1.jpeg" class="img-fluid" alt="Lat Lng Image" width="600" height="500">
-           <a href="part_2.html" target="_blank">Link to Notebook</a>
-        </div>
-</div>
+                            Michael Schachner 14306 and third is Virginie Boone 9402. In all there are 19 wine tasters in this datatset.<br>
+                                Second analysis is to take a look wine prices by wine grade.We see a progressive linear trend, the higher the grade of wine is, the more
+                                    expensive the wine. <br>
+                                    Third analysis is to take a look at wine prices by the year the wine was produced. There is no consistent trend here but we see that older wines are 
+                                    on average more expensive than recent wines.<br>
+                                    Fourth Analysis is wine prices by country of origin.
+                                The last analysis is to look at the number of wineries per country.
+                            We perform the same analysis again but this time, our focus will be on the United States</p> </div>
+                        </div>
+                    </div>
+                <div class="col-md-6 col-sm-10">
+            <img src="./css/grade_price_1.jpeg" class="img-fluid" alt="Lat Lng Image" width="600" height="500">
+        <a href="part_2.html" target="_blank">Link to Notebook</a></div>
+    </div>
 </div>
 </section>
+<!--End of Analysis section-->
 
+
+<!----Conclusion section-->
 <section>
-    <div class="container">
-        <div class="row">
-<div class="col-md-10 mt-5">
-    <a href="https://github.com/Deborahaina/DATS6103_Wine" target="_blank">Link to Github Code repository</a></div>
- </div>
- </div>
-</div>
+    <div class="container mt-5">
+        <div class='row text-center justify-content-center'>
+            <div class="col-md-5 col-sm-10 ">
+                <div class="card" >
+                    <div class="card-header bg-secondary text-white">Conclusions</div>
+                        <div class="card-body">
+                        <p class="card-text">
+                            The country with the most wineries is the United States.<br>
+                            The most expensive wine in absolute value is from France worth $3300.<br>
+                            The most expensive wine on average is from England.<br>
+                            The higher the grade of wine, the more expensive the wine is.<br>  
+                            On average older wines, that is wines produced in the 1980's are more expensive than the ones produced recently.<br>   
+                        The state with the most wineries in the United States is California.<br>          
+                    The most expensive wines on average in the United States is from California </p> </div>
+                    <a href="https://github.com/Deborahaina/DATS6103_Wine" target="_blank">Link to Github Code repository</a>
+                </div>
+            </div>
+        </div>
 </section>
-
-
+<!--End of Conclusion section-->
 
 
 <footer class="bg-secondary mt-5 pt-5 ">
     <div class="container-fluid"></div> 
         <div class="row">
-            <div class="col text-center text-white">
+        <div class="col text-center text-white">
         <h4>DATS 6103 - Individual Project 2 - Deborah Aina</h4>
     </div>
 </footer>
