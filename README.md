@@ -2,6 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4259227.svg)](https://doi.org/10.5281/zenodo.4259227)
 
+Link to github.io:  https://deborahaina.github.io/DATS6103_Wine/
+
 
 # DATS6103_Wine
 Data Source  
